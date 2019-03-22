@@ -1,0 +1,6 @@
+17:20:22 **** Incremental Build of configuration Debug for project reseau_neuron ****
+make all 
+make: Nothing to be done for 'all'.
+
+17:20:22 Build Finished (took 375ms)
+

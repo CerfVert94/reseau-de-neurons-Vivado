@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.tcf.debug.LaunchConfigurationType">
+<booleanAttribute key="com.xilinx.sdk.tcf.debug.uimonitor" value="true"/>
+<stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="Local"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/neural"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>

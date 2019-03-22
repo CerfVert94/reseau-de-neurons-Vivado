@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1552661328">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="neural_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="neural_wrapper.drc"/>
+  <File Type="BG-BGN" Name="neural_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="neural_wrapper.sysdef"/>
+  <File Type="BITSTR-MMI" Name="neural_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="neural_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="neural_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="neural_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="neural_wrapper.msk"/>
+  <File Type="BG-BIN" Name="neural_wrapper.bin"/>
+  <File Type="BG-BIT" Name="neural_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="neural_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="neural_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="neural_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="neural_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="neural_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="neural_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="neural_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="neural_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="neural_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="neural_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="neural_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="neural_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="neural_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="neural_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="neural_wrapper_routed.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="neural_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="neural_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="neural_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="neural_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="neural_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="neural_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="neural_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="neural_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="neural_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="neural_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="neural_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="neural_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="neural_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="neural_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="neural_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="neural_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="neural_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="neural_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="neural_wrapper.hwdef"/>
+  <File Type="OPT-DRC" Name="neural_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="neural_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="neural_wrapper_timing_summary_init.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="neural_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="PA-TCL" Name="neural_wrapper.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/neural/neural.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/neural/hdl/neural_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="neural_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

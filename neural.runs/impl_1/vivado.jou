@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Mar 15 16:03:31 2019
+# Process ID: 7647
+# Current directory: /nfs/home/sasl/eleves/ei-se/3701019/Bureau/TP_CODESIGN/Neuron/neural/neural.runs/impl_1
+# Command line: vivado -log neural_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source neural_wrapper.tcl -notrace
+# Log file: /nfs/home/sasl/eleves/ei-se/3701019/Bureau/TP_CODESIGN/Neuron/neural/neural.runs/impl_1/neural_wrapper.vdi
+# Journal file: /nfs/home/sasl/eleves/ei-se/3701019/Bureau/TP_CODESIGN/Neuron/neural/neural.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source neural_wrapper.tcl -notrace

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="neural_wrapper_hw_platform_0-bmmFile"/>
+	<item value="neural_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="neural_wrapper_hw_platform_0-device"/>
+	<item value="neural_wrapper.bit" key="neural_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="neural_wrapper_hw_platform_0-target"/>
+	<item value="false" key="neural_wrapper_hw_platform_0-partial_bit"/>
+</section>

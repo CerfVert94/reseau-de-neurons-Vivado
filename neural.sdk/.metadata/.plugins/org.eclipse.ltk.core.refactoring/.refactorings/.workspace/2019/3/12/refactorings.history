@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;reseau_neuron/timers_b.h&apos;" deleteContents="false" description="Delete resource &apos;reseau_neuron/timers_b.h&apos;" element1="/reseau_neuron/timers_b.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1553264630563"/>&#x0A;<refactoring comment="Delete resource &apos;reseau_neuron/timers_b.c&apos;" deleteContents="false" description="Delete resource &apos;reseau_neuron/timers_b.c&apos;" element1="/reseau_neuron/timers_b.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1553264635047"/>
+</session>

@@ -1,0 +1,31 @@
+17:16:38 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../LED_test_tut_1C.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"LED_test_tut_1C.o" -I../../test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"LED_test_tut_1C.d" -MT"LED_test_tut_1C.d" -o "LED_test_tut_1C.o" "../LED_test_tut_1C.c"
+../LED_test_tut_1C.c: In function 'LEDOutputExample':
+../LED_test_tut_1C.c:215:3: warning: "/*" within comment [-Wcomment]
+   /* Loop forever blinking the LED. */
+ ^
+../LED_test_tut_1C.c:80:9: warning: unused variable 'l' [-Wunused-variable]
+  int i, l;
+         ^
+../LED_test_tut_1C.c:67:6: warning: unused variable 'led' [-Wunused-variable]
+  int led = LED; /* Hold current LED value. Initialise to LED definition */
+      ^
+Finished building: ../LED_test_tut_1C.c
+ 
+Building target: test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/ps7_cortexa9_0/lib -o "test.elf"  ./LED_test_tut_1C.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 584168	   2208	  22660	 609036	  94b0c	test.elf
+Finished building: test.elf.size
+ 
+
+17:16:39 Build Finished (took 1s.365ms)
+
