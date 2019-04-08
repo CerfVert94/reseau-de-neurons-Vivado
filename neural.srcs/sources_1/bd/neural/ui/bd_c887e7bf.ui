@@ -4,24 +4,50 @@
 preplace port DDR -pg 1 -y -240 -defaultsOSRD
 preplace port leds_8bits -pg 1 -y -350 -defaultsOSRD
 preplace port FIXED_IO -pg 1 -y -220 -defaultsOSRD
+preplace inst xbip_dsp48_macro_6 -pg 1 -lvl 2 -y -880 -defaultsOSRD
+preplace inst xbip_dsp48_macro_7 -pg 1 -lvl 2 -y -750 -defaultsOSRD
+preplace inst xbip_dsp48_macro_8 -pg 1 -lvl 3 -y -870 -defaultsOSRD
 preplace inst rst_processing_system7_0_100M -pg 1 -lvl 2 -y 80 -defaultsOSRD
+preplace inst xbip_dsp48_macro_9 -pg 1 -lvl 4 -y -1230 -defaultsOSRD
 preplace inst axi_gpio_0 -pg 1 -lvl 1 -y -350 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 3 -y 120 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 7 -y -50 -defaultsOSRD
+preplace inst xbip_dsp48_macro_0 -pg 1 -lvl 2 -y -1400 -defaultsOSRD
+preplace inst xbip_dsp48_macro_1 -pg 1 -lvl 3 -y -1320 -defaultsOSRD
+preplace inst xbip_dsp48_macro_2 -pg 1 -lvl 2 -y -1270 -defaultsOSRD
+preplace inst xbip_dsp48_macro_3 -pg 1 -lvl 2 -y -1140 -defaultsOSRD
+preplace inst xbip_dsp48_macro_4 -pg 1 -lvl 2 -y -1010 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 5 -y -30 -defaultsOSRD
+preplace inst xbip_dsp48_macro_5 -pg 1 -lvl 3 -y -1100 -defaultsOSRD
+preplace inst xbip_dsp48_macro_10 -pg 1 -lvl 5 -y -1100 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 4 -y 110 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y -30 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 4 NJ -240 NJ -240 NJ -240 NJ
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 0 4 20 100 NJ -10 NJ -10 1120
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 NJ -50 820
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 440
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 3 40 180 NJ 180 810
-preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -220 NJ -220 NJ -220 NJ
-preplace netloc axi_gpio_0_GPIO 1 1 4 NJ -350 NJ -350 NJ -350 N
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 1 N
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 30 110 450 170 820
-levelinfo -pg 1 0 240 640 970 1140 1180 -top -420 -bot 240
+preplace netloc processing_system7_0_DDR 1 1 7 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ -240 NJ
+preplace netloc xbip_dsp48_macro_1_P 1 3 1 970
+preplace netloc xbip_dsp48_macro_4_P 1 2 1 750
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 4 1 1320
+preplace netloc xbip_dsp48_macro_8_P 1 3 2 970 -1080 N
+preplace netloc xbip_dsp48_macro_6_P 1 2 1 750
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 5 2 1580 -60 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 NJ -60 N -60 970
+preplace netloc xbip_dsp48_macro_0_P 1 2 1 750
+preplace netloc xbip_dsp48_macro_5_P 1 3 1 970
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 5 2 1590 -40 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 380
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 5 -20 120 NJ -10 750 -10 990 -60 1310
+preplace netloc processing_system7_0_FIXED_IO 1 1 7 NJ -220 NJ -220 NJ -220 NJ -220 NJ -220 NJ -220 NJ
+preplace netloc axi_gpio_0_GPIO 1 1 7 NJ -350 NJ -350 NJ -350 NJ -350 NJ -350 N -350 N
+preplace netloc xbip_dsp48_macro_9_P 1 4 1 1310
+preplace netloc xbip_dsp48_macro_7_P 1 2 1 750
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 2 2 760 70 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -30 110 390 -40 N -40 980 -40 1300
+preplace netloc xbip_dsp48_macro_3_P 1 2 1 750
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 0 5 -40 100 NJ -30 NJ -30 N -30 1290
+preplace netloc xbip_dsp48_macro_2_P 1 2 1 750
+levelinfo -pg 1 -60 180 580 870 1140 1450 1690 1900 2030 -top -1470 -bot 410
 ",
 }
 {
-   da_axi4_cnt: "2",
+   da_axi4_cnt: "3",
    da_board_cnt: "1",
    da_ps7_cnt: "2",
 }

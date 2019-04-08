@@ -3909,3 +3909,384 @@ Caused by: java.lang.Error: Channel is waiting for Hello message
 	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
 	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
 	... 6 more
+10:26:56 INFO  : Launching XSDB server: xsdb -n /opt/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:26:59 INFO  : XSDB server has started successfully.
+10:27:01 INFO  : Processing command line option -hwspec /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper.hdf.
+10:33:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248585451" && level==0} -index 0' command is executed.
+10:34:02 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:34:35 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Could not find a ARM device on the board. Please check if the target is in:
+     1. Split JTAG mode - No operations are possible with ARM DAP
+     2. Non Jtag bootmode - Bootrom may need time to enable DAP. Please try again
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:503)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:35:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:13 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zed 210248585451" && level==0". available targets:
+  1* xc7z020
+10:35:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:31 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zed 210248585451" && level==0". available targets:
+  1* xc7z020
+10:35:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:52 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zed 210248585451" && level==0". available targets:
+  1* xc7z020
+10:36:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:08 ERROR : no targets found with "jtag_cable_name =~ "Digilent Zed 210248585451" && level==0". available targets:
+  1* xc7z020
+10:38:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:38:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:38:03 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:38:14 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:38:14 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:38:48 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:38:48 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:39:42 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:39:42 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:40:17 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:40:17 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:40:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:40:46 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:40:53 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:40:53 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:41:42 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+10:41:42 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Failed to open Cable Node jsn-Zed-210248585451 on TCP:127.0.0.1:3121
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:42:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:42:50 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:43:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:43:02 INFO  : 'fpga -state' command is executed.
+10:43:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:43:03 INFO  : Sourcing of '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:43:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:43:03 INFO  : Hardware design information is loaded from '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf'.
+10:43:03 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:43:03 INFO  : 'stop' command is executed.
+10:43:04 INFO  : 'ps7_init' command is executed.
+10:43:04 INFO  : 'ps7_post_config' command is executed.
+10:43:04 INFO  : 'con' command is executed.
+10:43:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:43:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:06 INFO  : The application '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:43:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+loadhw /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+dow /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf
+----------------End of Script----------------
+
+10:43:06 INFO  : Memory regions updated for context APU
+10:43:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:43:06 INFO  : 'con' command is executed.
+10:43:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+con
+----------------End of Script----------------
+
+10:44:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:44:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:44:15 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:44:36 INFO  : Disconnected from the channel tcfchan#1.
+10:44:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:44:37 INFO  : 'fpga -state' command is executed.
+10:44:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:44:37 INFO  : Sourcing of '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:44:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:44:37 INFO  : Hardware design information is loaded from '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf'.
+10:44:38 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:44:38 INFO  : 'stop' command is executed.
+10:44:38 INFO  : 'ps7_init' command is executed.
+10:44:39 INFO  : 'ps7_post_config' command is executed.
+10:44:39 INFO  : 'con' command is executed.
+10:44:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:44:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:41 INFO  : The application '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:44:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+loadhw /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+dow /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf
+----------------End of Script----------------
+
+10:44:41 INFO  : Memory regions updated for context APU
+10:44:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:44:41 INFO  : 'con' command is executed.
+10:44:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+con
+----------------End of Script----------------
+
+10:46:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:46:37 INFO  : FPGA configured successfully with bitstream "/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/neural_wrapper.bit"
+10:46:44 INFO  : Disconnected from the channel tcfchan#2.
+10:46:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:46:45 INFO  : 'fpga -state' command is executed.
+10:46:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:45 INFO  : Sourcing of '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:46:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:46:46 INFO  : Hardware design information is loaded from '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf'.
+10:46:46 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:46:46 INFO  : 'stop' command is executed.
+10:46:47 INFO  : 'ps7_init' command is executed.
+10:46:47 INFO  : 'ps7_post_config' command is executed.
+10:46:47 INFO  : 'con' command is executed.
+10:46:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:46:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:49 INFO  : The application '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:46:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+loadhw /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+dow /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf
+----------------End of Script----------------
+
+10:46:49 INFO  : Memory regions updated for context APU
+10:46:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:46:49 INFO  : 'con' command is executed.
+10:46:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+con
+----------------End of Script----------------
+
+10:47:19 INFO  : Disconnected from the channel tcfchan#3.
+10:47:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:47:20 INFO  : 'fpga -state' command is executed.
+10:47:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:20 INFO  : Sourcing of '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:47:20 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:47:20 INFO  : Hardware design information is loaded from '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf'.
+10:47:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:47:21 INFO  : 'stop' command is executed.
+10:47:21 INFO  : 'ps7_init' command is executed.
+10:47:21 INFO  : 'ps7_post_config' command is executed.
+10:47:22 INFO  : 'con' command is executed.
+10:47:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:47:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:24 INFO  : The application '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:47:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+loadhw /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+dow /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf
+----------------End of Script----------------
+
+10:47:24 INFO  : Memory regions updated for context APU
+10:47:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:24 INFO  : 'con' command is executed.
+10:47:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+con
+----------------End of Script----------------
+
+10:47:57 INFO  : Disconnected from the channel tcfchan#4.
+10:47:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248525797" && level==0} -index 1' command is executed.
+10:47:57 INFO  : 'fpga -state' command is executed.
+10:47:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:58 INFO  : Sourcing of '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:47:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:47:58 INFO  : Hardware design information is loaded from '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf'.
+10:47:58 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0' command is executed.
+10:47:58 INFO  : 'stop' command is executed.
+10:47:59 INFO  : 'ps7_init' command is executed.
+10:47:59 INFO  : 'ps7_post_config' command is executed.
+10:47:59 INFO  : 'con' command is executed.
+10:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:02 INFO  : The application '/nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:48:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+loadhw /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/neural_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+dow /nfs/home/sasl/eleves/ei-se/3700758/reseau-de-neurons-Vivado/neural.sdk/reseau_neuron/Debug/reseau_neuron.elf
+----------------End of Script----------------
+
+10:48:02 INFO  : Memory regions updated for context APU
+10:48:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:48:02 INFO  : 'con' command is executed.
+10:48:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248525797"} -index 0
+con
+----------------End of Script----------------
+
