@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>customized_ip</spirit:library>
-  <spirit:name>neural_axi_bram_ctrl_0_0</spirit:name>
+  <spirit:name>neural_axi_bram_ctrl_0_1</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -703,7 +703,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>MASTER_TYPE</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.BRAM_PORTB.MASTER_TYPE">BRAM_CTRL</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.BRAM_PORTB.MASTER_TYPE">BRAM_CTRL</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MEM_SIZE</spirit:name>
@@ -2505,7 +2505,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">neural_axi_bram_ctrl_0_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">neural_axi_bram_ctrl_0_1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
